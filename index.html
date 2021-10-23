@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mac Center</title>
+        <link href="https://www.freepnglogos.com/uploads/apple-logo-png/image-apple-logo-trubetskoy-fisher-wiki-8.png" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="index.css"/> <!--liên kết file ccs-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="btLon.js" crossorigin="anonymous"></script>
+        <script src="java/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+      
+              $("#gototop").hide();
+      
+              $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $("nav").css({
+                        "position":"fixed",
+                        "right" : 0,
+                        "left":0,
+                        "top" :0,
+                        "z-index" :999,
+                        
+                    })
+                }
+                else{
+                    $("nav").css({
+                        "position":"relative",
+                    })
+                }
+                if($(this).scrollTop() >= 50)
+                    $("#gototop").show("slow")
+                else
+                    $("#gototop").hide("slow")
+              })
+
+
+
+              $("#gototop").click(function(){
+                  $("html, body").animate({
+                      scrollTop: 0
+                  }, 1000);
+              })
+      
+            })
+        </script>
+
+
+        <link rel="stylesheet" type="text/css" href="java/animate.css"/>
+        <script src="java/wow.min.js"></script>
+        
+        <script type="text/javascript">
+            new WOW().init();
+        </script>
+
+    </head>
+    <body>
+        <nav class="menuchinh">
+            <div class="animate__animated animate__fadeInLeftBig">
+                <div class="logo1">
+                    <a href="index.html" id="logo"><img src="logo/logo.jpg"></a>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInDown">
+                <div class="menu">
+                    <ul class="menucha">
+                        <li class="sub"><a href="index.html" target ="_blank" >TRANG CHỦ</a></li>
+                        <li class="sub">
+                            <a href="btLon2.html" target="_blank">SẢN PHẨM</a>   
+                            <ul class="menu1 sub1">
+                                <li><a href="btLon2.html">MACBOOK</a></li>
+                                <li><a href="btLon2.html">IMAC</a></li>
+                                <li><a href="btLon2.html">IPHONE</a> </li>
+                                <li><a href="btLon2.html">IPAD</a> </li>
+                                <li><a href="btLon2.html">AIRPODS</a> </li>
+                                <li><a href="btLon2.html">APPLE WATCH</a> </li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <a href="btLon3.html" target="_blank" >LIÊN HỆ</a>
+                            <ul class="menu1 sub1">
+                                <li><a href="btLon3.html">HỖ TRỢ</a></li>
+                                <li><a href="btLon6.html">THANH TOÁN</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub"><a href="btLon1.html" target ="_blank">ĐĂNG NHẬP</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="animate__animated animate__fadeInRightBig">
+                <div class="iconmenu">
+                    <li><a href="btLon2.html"><i class="fas fa-search"></i></a></li>
+                    <li><a href="btLon1.html"><i class="fas fa-user"></i></a></li>
+                    <li><a href="btLon6.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </div>
+            </div>
+
+        </nav>
+
+        
+        <label for="nav_input-mobile" class="nav_bars">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" name="" class="nav_input" id="nav_input-mobile">
+        
+        <label for="nav_input-mobile" class="overley"></label>
+
+        <div class="nav_mobile">
+            <label for="nav_input-mobile" class="nav_close">
+                <i class="fas fa-times"></i>
+            </label>
+            
+            <ul class="nav_mobile-list">
+                <li>
+                    <a class="nav_logo" href="index.html"><img src="logo/logo.jpg" width="110px" height="70px"></a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="nav_mobile-link">TRANG CHỦ</a>
+                </li>
+                
+                <li>
+                    <a href="btLon2.html" class="nav_mobile-link">SẢN PHẨM</a>
+                </li>
+
+                <li>
+                    <a href="btLon3.html" class="nav_mobile-link">LIÊN HỆ</a>
+                </li>
+
+                <li>
+                    <a href="btLon1.html" class="nav_mobile-link">ĐĂNG NHẬP</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="gallery-display-area">
+                <div class="gallery-wrap">
+                    <div class="image">
+                        <img src="trangchu/poster1.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="trangchu/poster2.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="trangchu/poster3.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="trangchu/poster1.jpg" />
+                    </div>
+                    <div class="image">
+                        <img src="trangchu/poster3.jpg" />
+                    </div>             
+                </div>
+            </div>
+        </div>
+
+        <div class="poster_mobile">
+            <img src="trangchu/image1.jpg" />
+        </div>
+
+        <div id="gototop">
+            <a id="go" href="javascript:;" ><i class="fas fa-chevron-up"></i></a>
+        </div>
+
+            <div class="sp">
+                <div class="sp2 ">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/mac.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">MACBOOK PRO</h4>
+                        <p>Mỏng,sang nhẹ và hoàn toàn yên tĩnh
+                            với thiết kế "No Fan, No Noise" từ Apple</p>
+                    </div>
+                </div>
+                
+                <div class="sp2">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/mac1.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">MACBOOK AIR</h4>
+                        <p>Mỏng, nhẹ và hoàn toàn yên tĩnh
+                            với thiết kế "No Fan, No Noise" từ Apple</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sp">
+                <div class="sp2">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/mac mini.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">MAC MINI M1</h4>
+                        <p>Thiết kế nhỏ gọn hoàn toàn mạnh mẽ
+                            Tiếp cận Mac OS với chi phí không thế tốt hơn.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/imac.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">IMAC</h4>
+                        <p>Đơn giản với thiết kế All-in-One từ Apple
+                            2 lựa chọn với màn hình 4K và 5K tuyệt đẹp.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="sp3">
+                <div class="sp2">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/iphone.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">IPHONE</h4>
+                        <p>iPhone 12, iPhone 12 Pro và Pro Max.<br>
+                            Đã sẵn sàng cho bạn trải nghiệm tại Mac Center</p>
+                    </div>
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/ipad.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">IPAD</h4>
+                        <p>Nhiều phiên bản về kích thước và dung lượng<br>
+                            iPad 10.2", iPad Air 10.9", iPad Pro 11" và iPad Pro 12.9"</p>
+                    </div>
+                    
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/wacth.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">APPLE WATCH</h4>
+                        <p>Series 6, nhanh hơn, mỏng hơn, pin lâu hơn
+                            <br>Chống nước 50m, màn hình cảm ứng OLED mượt mà.</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="sp4">
+                <div class="sp2">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/airpod.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">AIRPODS</h4>
+                        <p>Chip xử lý Apple H1, kết nối Bluetooth<br>
+                            2 phiên bản sạc có dây và sạc không dây</p>
+                    </div> 
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/airtag.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">AIRTAG </h4>
+                        <p>Chip xử lý Apple H1, kết nối Bluetooth<br>
+                            2 phiên bản sạc có dây và sạc không dây</p>
+                    </div> 
+                </div>
+
+                <div class="sp2">
+                    <div>
+                        <a href="btLon2.html" target="_blank"><img src="trangchu/home.jpg"/></a>
+                    </div>
+                    <div  class="wow animate__zoomIn">
+                        <h4 id="tensp">HOMEPOD MINI</h4>
+                        <p>Âm thanh 360 độ, tích hợp 4 Microphones<br>
+                            Tương tác hoàn hảo với Touch Control hay Siri</p>
+                    </div> 
+                </div>
+            </div>
+        <div class="gif">
+            <video class= "wow animate__fadeInLeftBig" title="Mac-Center" muted="muted" width="1380" loop="true" autoplay="true" src="gif/gif1.mp4"></video>
+        </div>
+        <!--
+            key
+        -->
+        <div class="sphot">
+            <a href="btLon2.html" target="_blank"><h1  class= "wow animate__fadeInUp">SwitchEasy Dots Rainbow</h1></a>
+        </div>
+
+        <div class="sphot1">
+            <p  class= "wow animate__slideInUp">Một dòng Case chuyên biệt cho MacBook, được thiết kế với họa tiếc chấm bi độc đáo từ SwitchEasy</p>
+            <p  class= "wow animate__slideInUp">Chất liệu Matte giúp hạn chế vân tay, bụi bẩn ... bảo vệ bề mặt và các góc cạnh cho MacBook một cách tuyệt vời!</p>
+        </div>
+
+        <div class="menu3">
+            <div class="menu4">
+                <div class="anh" >
+                    <a href="btLon2.html" target="_blank"><img class="wow animate__zoomIn" src="trangchu/image8.jpg" /></a>
+                </div>
+
+                <div class="text" >
+                    <h4 class="wow animate__zoomIn" id="tensp3">LÓT PHÍM MACBOOK 2020 JCPAL (CLEAR)</h4>
+                    <p class="wow animate__zoomIn">Chất liệu mềm, trong suốt, nhiều Size cho MacBook<br>Giá: 250.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="btLon2.html" target="_blank"><img class="wow animate__zoomIn" src="trangchu/image9.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 class="wow animate__zoomIn" id="tensp3">DÁN MACBOOK JCPAL 5-IN-1 (SPACE GRAY)</h4>
+                    <p class="wow animate__zoomIn">Có nhiều Size cho MacBook 13.3", 15.4", 16"<br>Giá: 750.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="btLon2.html" target="_blank"><img class="wow animate__zoomIn" src="trangchu/image10.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 class="wow animate__zoomIn" id="tensp3">STAND JCPAL FOR MAC</h4>
+                    <p class="wow animate__zoomIn">Chân đế MacBook, thiết kế gập gọn Portable<br>Giá: 720.000 vnđ</p>
+                </div>
+            </div>
+        </div>
+
+        <!--
+            airpod max
+        -->
+        <div class="sphot">
+            <a href="btLon2.html" target="_blank"><h1  class= "wow animate__fadeInUp">AirPods Max</h1></a>
+        </div>
+
+        <div class="sphot1">
+            <p class= "wow animate__slideInUp">Giờ đây, bạn hoàn toàn có thể dễ dàng trải nghiệm chất âm thực tế AirPods Max tại Mac Center</p>
+            <p class= "wow animate__slideInUp">Hiện tại, AirPods Max gồm có 5 màu: Space Gray, Silver, Sky Blue, Pink và Green.</p>
+        </div>
+        
+        <div class="menu3">
+            <div class="menu4">
+                <div class="anh">
+                    <a href="btLon2.html" target="_blank"><img class="wow animate__zoomIn" src="trangchu/image11.jpg" /></a>
+                </div>
+
+                <div class="text">
+                    <h4 class="wow animate__zoomIn" id="tensp3">BOSE PORTABLE HOME SPEAKER</h4>
+                    <p class="wow animate__zoomIn">Âm thanh 360 độ với tiếng Bass chắc khỏe từ Bose<br>Giá: 1.250.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="btLon2.html" target="_blank"><img class="wow animate__zoomIn" src="trangchu/image12.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 class="wow animate__zoomIn" id="tensp3">AIRPODS MAX (PINK)</h4>
+                    <p class="wow animate__zoomIn">Chip Apple H1, Apple-designed dynamic driver<br>Giá: 12.500.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="btLon2.html" target="_blank"><img class="wow animate__zoomIn" src="trangchu/image13.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 class="wow animate__zoomIn" id="tensp3">AIRPODS MAX EAR CUSHIONS</h4>
+                    <p class="wow animate__zoomIn">Color: Black, Silver, Blue, Green, Pink<br>Giá: 1.950.000 vnđ</p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="text-center">
+            <!--<div class="banner">
+                <div class="img_banner">
+                    <img class="wow animate__backInLeft" title="Mac-Center" src="trangchu/image14.jpg"/>
+                </div>
+                <div class="detail">
+                    <p>Battery: Use 20 hours - Charge 3 hours </p>
+                    <p>Charging port: Lightning</p>
+                    <p>Audio technology: Active Noise, AudioTransparency Mode</p>
+                    <p>Compatible: Android, iOS (iPhone)</p>
+                    <p>Utilities: Anti-noise </p>
+                    <p>Control by: Press key </p>
+                    <p>Brand: Apple </p>
+                    <div class="input_detail">
+                        <a href="btLon2.html"><input type="button" value="XEM NGAY"></a>
+                    </div>
+                </div>
+            </div>-->
+            
+            <img class="wow animate__backInLeft" title="Mac-Center" src="trangchu/image14.jpg"/>
+            
+            <img class="wow animate__backInDown" title="Mac-Center" src="trangchu/image15.jpg"/>
+
+            <img class="wow animate__backInRight" title="Mac-Center" src="trangchu/image16.jpg"/>
+        </div>
+        <div class="sphot_1">
+            <div class="sphot">
+                <a href="btLon2.html" target="_blank"><h1 class= "wow animate__fadeInUp">Rain Design Series mBar</h1></a>
+            </div>
+
+            <div class="sphot1">
+                <p class= "wow animate__slideInUp">Không chỉ đơn giản là một chân đế dành cho MacBook thân yêu bên bạn...</p>
+                <p class= "wow animate__slideInUp">Rain Design luôn mang đến cho bạn sự sáng tạo và cảm hứng hoàn toàn mới trong công việc.</p>
+            </div>
+        </div>
+            
+        <div class="menu3">
+            <div class="menu4">
+                <div class="anh">
+                    <a href="btLon2.html" target="_blank"><img class="wow animate__zoomIn" src="trangchu/anh1.jpg" /></a>
+                </div>
+
+                <div class="text">
+                    <h4 class="wow animate__zoomIn" id="tensp3">RAIN DESIGN MSTAND MOBILE (SPACE GRAY)</h4>
+                    <p class="wow animate__zoomIn">Chân đế Smartphone, chất liệu Aluminium<br>Giá: 690.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="btLon2.html" target="_blank"><img class="wow animate__zoomIn" src="trangchu/anh2.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 class="wow animate__zoomIn" id="tensp3">RAIN DESIGN MSTAND (GOLD)</h4>
+                    <p class="wow animate__zoomIn">Chân đế MacBook, gia tăng độ cao 15cm<br>Giá: 1.490.000 vnđ</p>
+                </div>
+            </div>
+
+            <div class="menu4">
+                <div class="anh">
+                    <a href="btLon2.html" target="_blank"><img class="wow animate__zoomIn" src="trangchu/anh3.jpg"/></a>
+                </div>
+
+                <div class="text">
+                    <h4 class="wow animate__zoomIn" id="tensp3">Rain Design iLevel2</h4>
+                    <p class="wow animate__zoomIn">Chân đế MacBook, gia tăng độ cao 15cm<br>Giá: 1.790.000 vnđ</p>
+                </div>
+            </div>
+        </div>  
+
+        <div class="text-center">
+            <iframe class="wow animate__fadeInUp" width="1200" height="676" src="https://www.youtube.com/embed/sAp83zBKlJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="image1">
+            <div>
+                <img class="wow animate__fadeInUp" src="trangchu/anh4.jpg"/>
+            </div>
+            <div>
+                <img class="wow animate__fadeInUp" src="trangchu/anh5.jpg"/>
+            </div>
+            <div>
+                <img class="wow animate__fadeInUp" src="trangchu/anh6.jpg"/>
+            </div>
+            <div>
+                <img class="wow animate__fadeInUp" src="trangchu/anh7.jpg"/>
+            </div>
+        </div>
+        
+        <hr id="gachchan">
+        
+        <div class="note" >
+            <div class="note1" >
+                <p><b>APPLE STORE</b></p>
+                <a href="btLon2.html"><p>MacBook Pro</p></a>
+                <a href="btLon2.html"><p>iMac</p></a>
+                <a href="btLon2.html"><p>iPhone</p></a>
+                <a href="btLon2.html"><p>iPad, iPad Pro</p></a>
+                <a href="btLon2.html"><p>Apple Watch</p></a>
+                <a href="btLon2.html"><p>AirPods</p></a>
+            </div>
+
+            <div class="note1">
+                <p><b>ACCESSORIES</b></p>
+                <a href="btLon2.html"><p>Mac Accessories</p></a>
+                <a href="btLon2.html"><p>Mice & Keyboards</p></a>
+                <a href="btLon2.html"><p>Mousepads</p></a>
+                <a href="btLon2.html"><p>Health & Home Devices</p></a>
+                <a href="btLon2.html"><p>Webcam & Headset</p></a>
+                <a href="btLon2.html"><p>Stand for MacBook</p></a>
+            </div>
+
+            <div class="note1">
+                <p><b>AUDIO SYSTEM</b></p>
+                <a href="btLon2.html"><p>JBL</p></a>
+                <a href="btLon2.html"><p>Bose</p></a>
+                <a href="btLon2.html"><p>Sony</p></a>
+                <a href="btLon2.html"><p>Ultimate Ears</p></a>
+                <a href="btLon2.html" ><p>Harman Kardon</p></a>
+                <a href="btLon2.html"><p>Marshall</p></a>
+            </div>
+
+            
+            <div class="note1">
+                <p><b>HEADPHONE</b></p>
+                <a href="btLon2.html"><p>Tai nghe JBL</p></a>
+                <a href="btLon2.html"><p>Tai nghe Bose</p></a>
+                <a href="btLon2.html"><p>Tai nghe Skull Candy</p></a>
+                <a href="btLon2.html"><p>Tai nghe Audio Technica</p></a>
+                <a href="btLon2.html" ><p>Tai nghe Sudio</p></a>
+                <a href="btLon2.html"><p>Tai nghe Jabra</p></a>
+            </div>
+
+
+            <div class="note1">
+                <p><b>THÔNG TIN MỞ RỘNG</b></p>
+                <a href="btLon3.html"><p>Chính sách bảo hành</p></a>
+                <a href="btLon3.html"><p>Chính sách đổi trả</p></a>
+                <a href="btLon3.html"><p>Chính sách bảo mật thông tin</p></a>
+                <a href="btLon3.html"><p>Dịch vụ sửa chữa</p></a>
+                <a href="btLon3.html"><p>Vận chuyển - Thanh toán</p></a>
+                <a href="btLon3.html"><p>Liên hệ</p></a>
+            </div>
+        </div>
+        
+
+
+
+
+        <div class="gioithieu">
+            <div class=logogt1>
+                <div class="logogt">
+                    <img src="logo/logo_gioithieu.png" />
+                </div>
+                <div class="textgt">
+                    <p >Được thiết lập từ năm 2008, Mac Center được ghi nhận là một trong những cửa hàng chuyên cung cấp các sản phẩm công nghệ cao tại Việt Nam.</p>
+                    <p >Với hơn 10 năm kinh nghiệm & đam mê trong lĩnh vực máy tính và đặc biệt là các dòng máy tính Apple, Mac Center hy vọng sẽ giúp bạn có được những sản phẩm Apple với chất lượng tốt nhất tại Việt Nam.</p>
+                </div>
+            </div>
+            
+            
+            <div class="hotro" >
+                <ul class="hotro1">
+                    <li >
+                        <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hồ Chí Minh</h3>
+                        <p>Quận 10 - 561 Sư Vạn Hạnh, Phường 13<br></p>
+                        <p>Quận Gò Vấp - 371 Nguyễn Kiệm, Phường 3.<br></p>
+                        <p>Quận Tân Bình - 136 Nguyễn Hồng Đào, Phường 4.<br></p>
+                    </li>
+                    
+                    <li >
+                        <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hà Nội:</h3>
+                        <p>Cầu Giấy - 28 Khúc Thừa Dụ.<br></p>
+                        <p>Đống Đa - 49-51 Hồ Đắc Di, Nam Đồng.<br></p>
+                    </li>
+                    <li >
+                        <h3> Mạng xã hội</h3>
+                        <p><a href="https://www.facebook.com/apple/" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-facebook"> Facebook </i><br></a></p>
+                        <p><a href="https://www.youtube.com/user/Apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-youtube"> Youtute </i><br></a></p>
+                        <p><a href="https://twitter.com/apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-twitter-square"> Twitter </i><br></a></p>
+                    </li>
+                    <li >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756434!2d106.67562481481599!3d10.816235861415189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628511888924!5m2!1svi!2s" width="484" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </li>
+                </ul>
+
+                <div class="icongt">
+                    <div class="i1"><img src="logo/logo_gt1.png"/></div>
+                    <div class="i1"><img src="logo/logo_gt2.png"/></div>
+                    <div class="i1"><img src="logo/logo_gt3.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt4.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt5.png"/></div>
+                    <div class="i2"><img src="logo/logo_gt6.png"/></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="last">
+            <p>2008 © MACCENTER VIETNAM. ALL RIGHTS RESERVED.</p>
+        </div>
+    </body>
+</html>

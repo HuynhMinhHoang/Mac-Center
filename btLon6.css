@@ -1,0 +1,667 @@
+.logo1 >a > img{
+    width: 100px;
+    padding: 13px;
+}
+nav.menuchinh{
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    justify-content:center;
+}
+
+ul.menucha{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+ul.menucha > li{
+    padding: 20px;
+    max-width: 500px;
+}
+ul.menucha > li > a{
+    text-decoration: none;
+    color:rgb(170, 170, 170);
+    display: block;
+    padding: 20px;
+    transition: 0.3s;
+}
+ul.menucha > li > a:hover{
+    color: white;
+}
+
+
+ul.menu1{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: 99 ;
+}
+ul.menu1 > li > a{
+    text-decoration: none;
+    color:rgb(170, 170, 170);
+    font-size: 15px;
+    transition: 0.3s;
+}
+ul.menu1 > li{
+    padding: 20px;
+    max-width: 500px;
+    width: 120px;
+}
+ul.menu1 > li > a:hover{
+    color: white;
+}
+
+.sub1{
+    display: none;
+}
+.sub:hover .sub1{
+    display: block;
+    position: absolute;
+
+}
+.iconmenu {
+    display: flex;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.iconmenu li{
+    max-width: 30px;
+}
+.iconmenu li > a{
+    color: white;
+
+}
+.iconmenu li > a > i{
+    width: 100%;
+    padding: 20px;
+    color: rgb(170, 170, 170);
+    transition: 0.3s;
+}
+.iconmenu li > a > i:hover{
+    color: white;
+}
+.nav_bars{
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+.overley{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 99;
+    display: none;
+    animation: mobile linear 0.4s;
+}
+.nav_mobile{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    height: 575px;
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 99;
+    transform: translateX(-100%);
+    transition: transform linear 0.4s;
+    border-radius: 10px;
+}
+.nav_logo{
+    position: absolute;
+    top:20px;
+    right: 120px;
+}
+.nav_mobile-list{
+    margin-top: 120px;
+}
+.nav_mobile-list > li > a{
+    color: rgb(187, 183, 183);
+    list-style-type: none;
+}
+.nav_mobile-list > li > a:hover{
+    color: rgb(255, 255, 255);
+}
+.nav_mobile-link{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.nav_close{
+    font-size: 35px;
+    color: rgb(187, 183, 183);
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.nav_close:hover{
+    color: rgb(255, 255, 255);
+}
+.nav_input:checked ~ .overley{
+    display: block;
+}
+.nav_input{
+    display: none;
+}
+.nav_input:checked ~ .nav_mobile{
+    transform: translateX(0%);
+}
+
+@keyframes mobile{
+     from{
+         opacity: 0;
+     }
+     to{
+         opacity: 0.5;
+     }
+}
+
+
+
+.poster_tablet{
+    display: none;
+}
+@font-face{
+    src: url(font/HelveticaNeue.ttf.otf);
+    font-family: 'fontdep1';
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:white;
+    font-family:'fontdep1';
+}
+
+
+.poster{
+    display: flex;
+    justify-content:space-evenly;
+}
+.sp > a > img {
+    width: 100%;
+    transition: 0.3s;
+}
+.sp > a > img:hover {
+    opacity: 0.8;
+}
+.sp{
+    padding: 40px;
+    width: 100px;
+}
+.sp > p{
+    font-size: 17px;
+    text-align:center;
+    transition: 0.3s;
+}
+.sp > p:hover{
+    color: rgb(46, 46, 233);
+}
+
+.poster1{
+    text-align: center;
+    
+}
+.text{
+    text-align: center;
+    padding-top: 30px;
+}
+.text > h1{
+    font-size: 45px;
+    color: rgb(22, 22, 22);
+}
+.diachi{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 100px;
+    align-items: center;
+}
+.diachi1{
+    width: 500px;
+}
+.text1{
+    width:500px;
+    padding: 50px;
+}
+.text1 >h3{
+    font-size: 33px;
+    color: rgb(43, 42, 42);
+}
+.text1 > p{
+    color: rgb(43, 42, 42);
+    font-size: 18px;
+}
+.text2 > li{
+    font-size: 18px;
+    padding: 10px;
+    color:rgb(43, 42, 42);
+}
+.text2 > li > a{
+    text-decoration: none;
+    color:rgb(43, 42, 42);
+    transition: 0.3s;
+}
+.text2 > li > a:hover{
+    color: rgb(4, 4, 207);
+}
+
+.dathang{
+    display: flex;
+    justify-content:space-evenly;
+    padding-bottom: 60px;
+}
+.dathang1 > div > h4{
+    font-size: 25px;
+    text-align: center;
+    color: rgb(37, 37, 37);
+}
+.dathang1 > div > p{
+    color: #2A9DCC;
+}
+.dathang1 > div > input{
+    width: 600px;
+    height: 55px;
+    border: 1px solid rgb(165, 165, 165);
+}
+.dathang1 > div > textarea{
+    width: 600px;
+    height: 100px;
+    border: 1px solid rgb(165, 165, 165);
+}
+.dathang1 > div{
+    padding: 6px;
+}
+
+.thanhtoan > div > h4{
+    padding-bottom: 16px;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(37, 37, 37);
+}
+.thanhtoan > div > p{
+    border: 1px solid #9de2ee;
+    padding: 20px;
+    width: 450px;
+    border-radius: 5px;
+    color:#0c5460;
+    background-color: #D1ECF1;
+}
+
+#submit{
+    padding-bottom: 20px;
+}
+
+#submit1 > input{
+    width: 495px;
+    height: 55px;
+    border: 1px solid rgb(92, 92, 92);
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+#submit1 > input:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+#gototop{
+    width:60px;
+    height: 60px;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color:rgb(20, 20, 20);
+    border-radius: 50px;
+    z-index: 5;
+    transition: 0.3s;
+ }
+ #gototop:hover{
+    opacity: 0.8;
+ }
+ #gototop > a > i{
+     text-align: center;
+     color: rgb(255, 255, 255);
+     padding: 15px;
+ }
+.note{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.note1 > p{
+    font-size: 17px;
+    color: rgb(151, 0, 0);
+}
+.note1 > a {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    font-size: 16px;
+    transition: 0.3s;
+}
+.note1 > a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration:underline ;
+}
+
+
+
+
+.gioithieu{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 50px;
+}
+.logogt1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.logogt > img{
+    width: 300px;
+    height: 60px;
+    padding-top: 30px;
+}
+
+.textgt >p {
+    color: rgb(155, 155, 155);
+    font-size: 16px;
+}
+
+ul.hotro1{
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content:space-around;
+}
+ul.hotro1 >li{
+    max-width: 500px;
+    color: rgb(155, 155, 155);
+    
+}
+.ul.hotro1 > li > iframe{
+    margin: 0px;
+    padding-top: 50x;
+}
+.hotro1 > li > p > a > i{
+    color: rgb(155, 155, 155);
+}
+.hotro1 > li > p{
+    font-size: 17px;
+}
+.hotro1 > li > h3{
+    font-size: 19px;
+    color: rgb(194, 194, 194);
+}
+ #hotro2{
+    color: rgb(231, 231, 231);
+    font-size: 20px;
+    text-decoration: none;
+    
+ }
+ #gachchan{
+     border: 0. solid rgb(88, 88, 88);
+     opacity: 0.5;
+ }
+ .icongt{
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
+ .icongt > div > img {
+    vertical-align:middle;
+ }
+ .i2 > img{
+    width: 130px;
+    height: 45px;    
+ }
+ .last{
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    color: rgb(138, 138, 138);
+}
+.last > p {
+    font-size: 14px;
+    margin: 0px;
+    padding: 15px;
+}
+ @media screen and (max-width: 500px){
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    nav.menuchinh{
+       display: none;
+    }
+    .sub > a{
+        font-size: 15px;
+    }
+    .tab{
+        display: none;
+    }
+    .nav_bars {
+        display: block;
+        display: flex;
+        justify-content: left;
+        background-color: black;
+        padding: 10px;
+    }
+    .nav_mobile{
+        width: 265px;
+        height: 480px;
+    }
+    .container{
+        display: none;
+    }
+    .poster_tablet{
+        display: block;
+        padding-bottom: 50px;
+    }
+    .poster_tablet > img{
+        width: 100%;
+    }
+    .poster{
+        width: 100%;
+        
+    }
+    .sp{
+        text-align: center;
+        padding: 0px;
+    }
+    .sp >a>img{
+        width: 30px;
+        height: 30px;
+        padding-top: 10px;
+    }
+    #tensp{
+        font-size: 10px;
+    }
+    .poster1 > img{
+        width: 100%;
+    }
+    .diachi{
+        padding: 20px 20px 0px 20px;
+        margin: 0px;
+        flex-direction: column;
+    }
+    .diachi1{
+        width: 100%;
+        text-align: center;
+    }
+    .diachi1 > img {
+        width: 300px;
+        height: 350px;
+    }
+    .text1 {
+        padding: 0;
+        margin: 0px;
+        width: 100%;
+    }
+    .text1 > h3{
+        text-align: center;
+        font-size: 15px;
+    }
+    .text1 > p{
+        font-size: 13px;
+    }
+    .text2{
+        margin: 0px;
+    }
+    .text2 > li{
+        padding: 3px;
+        font-size: 13px;
+    }
+    .dathang{
+        flex-direction: column;
+    }
+    .text{
+        padding: 0px;
+    }
+    .text >img {
+        width: 100%;
+    }
+    .text > h1{
+        margin: 20px;
+        font-size: 20px;
+    }
+    .text > p{
+        
+        margin: 0px auto;
+        width: 90%;
+        font-size: 13px;
+    }
+    .dathang {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .dathang1{
+        margin: 0px auto;
+    }
+    .dathang1 > div > h4{
+        font-size: 15px;
+        margin: 13px;
+    }
+    .dathang1 > div > input{
+        width: 300px;
+        height: 25px;
+        font-size: 8px;
+        padding: 4px;
+    }
+    .dathang1 > div > textarea{
+        width: 300px;
+        height: 45px;
+        font-size: 8px;
+        padding: 4px;
+    }
+    .dathang1 > div{
+        padding: 0px;
+        padding-bottom: 3px;
+    }
+    .thanhtoan{
+        padding-top: 10px;
+        width: 100%;
+        margin: 0px auto;
+    }
+    .thanhtoan > div > h4{
+        font-size: 15px;
+        margin: 13px;
+        padding: 0px;
+    }
+    .thanhtoan > div > p{
+        text-align: center;
+        margin: 0px auto;
+        padding: 10px;
+        width: 285px;
+        height: 15px;
+        font-size: 10px;
+    }
+    #submit {
+        text-align: center;
+        font-size: 10px;
+        padding: 10px;
+    }
+    #submit > input {
+        width: 8px;
+        height: 7px;
+    }
+    #submit1{
+        text-align: center;
+    }
+    #submit1 > input{
+        width: 310px;
+        height: 30px;
+        font-size: 8px;
+    }
+    #gachchan{
+        margin: 0px;
+    }
+    #gototop{
+        height:40px;
+        width: 40px;
+        right: 10px;
+        bottom: 10px;
+        position: fixed;
+        font-size: 15px;
+    }
+    /*gioithieu*/
+    .logogt > img{
+        width: 230px;
+        height: 50px;
+    }
+    .textgt >p{
+        font-size: 11px;
+    }
+    div.note{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+    }
+    div.note1{
+        padding: 7px;
+    }
+    div.note1 > p{
+        font-size: 6px;
+    }
+    div.note1 > a{
+        font-size: 6px;
+    }
+    div.gioithieu{
+        padding: 0px 10px 1px 10px;
+    }
+    ul.hotro1{
+        flex-direction: column;
+    }
+    ul.hotro1 > li > iframe{
+        display: none;
+    }
+    ul.hotro1 > li > h3{
+        font-size: 13px;
+    }
+    ul.hotro1 > li > p{
+        font-size: 10px;
+    }
+    div.logogt1{
+        padding: 0px 0px 0px 0px;
+    }
+    div.icongt{
+        display: none;
+    }
+    .last > p{
+        padding: 7px;
+        font-size: 7px;
+    }
+}

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mac Center</title>
+        <link href="https://www.freepnglogos.com/uploads/apple-logo-png/image-apple-logo-trubetskoy-fisher-wiki-8.png" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="chitietsp23.css"/> <!--liên kết file ccs-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="btLon.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="btLon.js" crossorigin="anonymous"></script>
+        <script src="java/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+      
+              $("#gototop").hide();
+      
+              $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $("nav").css({
+                        "position":"fixed",
+                        "right" : 0,
+                        "left":0,
+                        "top" :0,
+                        "z-index" :99,
+
+                        
+                    })
+                }
+                else{
+                    $("nav").css({
+                        "position":"relative",
+
+                    })
+                }
+                if($(this).scrollTop() >= 50)
+                    $("#gototop").show("slow")
+                else
+                    $("#gototop").hide("slow")
+              })
+
+
+
+              $("#gototop").click(function(){
+                  $("html, body").animate({
+                      scrollTop: 0
+                  }, 1000);
+              })
+      
+            })
+          </script>
+
+    </head>
+    <body>
+        <nav class="menuchinh">
+            <div class="animate__animated animate__fadeInLeftBig">
+                <div class="logo1">
+                    <a href="index.html" id="logo"><img src="logo/logo.jpg"></a>
+                </div>
+            </div>
+            <div class="animate__animated animate__fadeInDown">
+                <div class="menu">
+                    <ul class="menucha">
+                        <li class="sub"><a href="index.html" target ="_blank" >TRANG CHỦ</a></li>
+                        <li class="sub">
+                            <a href="btLon2.html" target="_blank">SẢN PHẨM</a>   
+                            <ul class="menu1 sub1">
+                                <li><a href="btLon2.html">MACBOOK</a></li>
+                                <li><a href="btLon2.html">IMAC</a></li>
+                                <li><a href="btLon2.html">IPHONE</a> </li>
+                                <li><a href="btLon2.html">IPAD</a> </li>
+                                <li><a href="btLon2.html">AIRPODS</a> </li>
+                                <li><a href="btLon2.html">APPLE WATCH</a> </li>
+                            </ul>
+                        </li>
+                        <li class="sub">
+                            <a href="btLon3.html" target="_blank" >LIÊN HỆ</a>
+                            <ul class="menu1 sub1">
+                                <li><a href="btLon3.html">HỖ TRỢ</a></li>
+                                <li><a href="btLon6.html">THANH TOÁN</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub"><a href="btLon1.html" target ="_blank">ĐĂNG NHẬP</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="animate__animated animate__fadeInRightBig">
+                <div class="iconmenu">
+                    <li><a href="btLon2.html"><i class="fas fa-search"></i></a></li>
+                    <li><a href="btLon1.html"><i class="fas fa-user"></i></a></li>
+                    <li><a href="btLon6.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </div>
+            </div>
+
+        </nav>
+
+        
+        <label for="nav_input-mobile" class="nav_bars">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" name="" class="nav_input" id="nav_input-mobile">
+        
+        <label for="nav_input-mobile" class="overley"></label>
+
+        <div class="nav_mobile">
+            <label for="nav_input-mobile" class="nav_close">
+                <i class="fas fa-times"></i>
+            </label>
+            
+            <ul class="nav_mobile-list">
+                <li>
+                    <a class="nav_logo" href="index.html"><img src="logo/logo.jpg" width="110px" height="70px"></a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="nav_mobile-link">TRANG CHỦ</a>
+                </li>
+
+                <li>
+                    <a href="btLon2.html" class="nav_mobile-link">SẢN PHẨM</a>
+                </li>
+
+                <li>
+                    <a href="btLon3.html" class="nav_mobile-link">LIÊN HỆ</a>
+                </li>
+
+                <li>
+                    <a href="btLon1.html" class="nav_mobile-link">ĐĂNG NHẬP</a>
+                </li>
+            </ul>
+        </div>
+
+<div id="gototop">
+            <a id="go" href="javascript:;" ><i class="fas fa-chevron-up"></i></a>
+        </div>
+
+
+        <div class="poster">
+            <div class="sp">
+                    <a href="btLon2.html" target="_blank"><img src="chitietsp/poster1.jpg"/></a>
+                    <p id="tensp">iPhone</p>
+            </div>
+            <div class="sp">
+                    <a href="btLon2.html" target="_blank"><img src="chitietsp/poster2.jpg"/></a>
+                    <p id="tensp">iPad - iPad</p>
+            </div>
+            <div class="sp">
+                    <a href="btLon2.html" target="_blank"><img src="chitietsp/poster3.jpg"/></a>
+                    <p id="tensp">Apple Watch</p>
+            </div>
+
+            <div class="sp">
+                    <a href="btLon2.html" target="_blank"><img src="chitietsp/poster4.jpg"/></a>
+                    <p id="tensp">AirPods</p>
+            </div>
+
+            <div class="sp">
+                    <a href="btLon2.html" target="_blank"><img src="chitietsp/poster5.jpg"/></a>
+                    <p id="tensp">AirPods Max</p>
+            </div>
+
+            <div class="sp">
+                    <a href="btLon2.html" target="_blank"><img src="chitietsp/poster6.jpg"/></a>
+                    <p id="tensp">Apple TV</p>
+            </div>
+        </div>
+
+        <div class="chitiet">
+            <div class="image">
+                <img src="chitietsp/sp23_1.jpg" id="mainImg" onclick="zoomImg(this)" />
+                <div class="thumb">
+                    <div><img src="chitietsp/sp23_1.jpg" onclick="changeImage(this)" /></div>
+                    <div><img src="chitietsp/sp23_2.jpg" onclick="changeImage(this)" /></div>
+                    <div><img src="chitietsp/sp23_3.jpg" onclick="changeImage(this)" /></div>
+                </div>
+                <div id="boder">
+                    <span id="close-icon"><i class="fas fa-times"></i></span>
+                    <img id="imageZoom"/>
+                </div>
+            </div>
+            <div class="textchinh">
+                <div  class="name">
+                    <h3>Apple Watch SE GPS (Gold)</h3>
+                </div>
+                <div class="text">
+                    <p><a href="index.html#demo">Home</a> | <a href="btLon2.html">Apple Watch</a> | Model: <a href="btLon2.html">Apple Watch SE GPS</a></p>
+                    <p>Chip: S5 with 64-bit dual-core processor</p>
+                    <p>Retina Display: LTPO OLED (1000 nits)</p>   
+                    <p>Capacity: 32GB, Battery Life: up to 18 hours</p>
+                    <p>Water resistant: 50 meters</p>
+                    <p>Color: Space Gray, Gold, Silver</p>
+                    <hr>
+                    <p id="gia">10.300.000 vnđ</p>
+
+                    <div class="dathang_main">
+                        <div class="submit" onclick="submit(this)">
+                            <a href="#"><p class="mua">THÊM VÀO GIỎ</p></a>
+                        </div>
+                        <div class="submit1">
+                            <a href="btlon6.html"><p class="mua">ĐẶT HÀNG</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chitiet1">
+            <p>Thông số kĩ thuật</p>
+            <div class="text-center">
+                <img src="chitietsp/tsKiThuat11.jpg"/>
+            </div>
+            <div class=chitiet2>
+                <p><b>Color :</b> Gold aluminum case</p>
+                <p><b>Connectivity :</b> Built-in GPS, GLONASS, Galileo, and QZSS</p>
+                <p><b>Chip :</b> S5 with 64-bit dual-core processor; W3 Apple wireless chip</p>
+                <p><b>Capacity :</b> 32GB</p>
+                <p><b>Sensor :</b></p>
+                    <ul class="chitiet3">
+                        <li>Optical heart sensor</li>
+                        <li>Electrical heart sensor</li>
+                        <li>Ambient light sensor</li>
+                        <li>Barometric altimeter</li>
+                        <li>Improved accelerometer up to 32 g‑forces</li>
+                    </ul>
+                <p><b>Display :</b></p>
+                    <ul class="chitiet3">
+                        <li>LTPO OLED display (1000 nits)</li>
+                        <li>Ion-X strengthened glass</li>
+                        <li>Sapphire crystal and ceramic back</li>
+                    </ul>
+                <p><b>Digital Crown :</b> Digital Crown with haptic feedback</p>
+                <p><b>Speaker :</b>Yes</p>
+                <p><b>Wireless :</b></p>
+                    <ul class="chitiet3">
+                        <li>Wi-Fi (802.11b/g/n 2.4GHz)</li>
+                        <li>Bluetooth 5.0</li>
+                    </ul>
+                <p><b>Power and Battery :</b> Built-in rechargeable lithium-ion battery; Up to 18 hours of battery life</p>
+                <p><b>Water resistant :</b> 50 meters</p>    
+                <p><b>Operating System :</b> watchOS 7</p>    
+                <p><b>Size & Weight:</b></p>    
+                <ul class="chitiet3">
+                        <li>Size: 40mm, 40 x 34 x 10.74 mm (H x W x D), Weight: none</li>
+                        <li>Size: 44mm, 44 x 38 x 10.74 mm (H x W x D), Weight: none</li>
+                    </ul>
+                <p><b>In the Box :</b></p>
+                    <ul class="chitiet3">
+                        <li>Apple Watch SE</li>
+                        <li>Sport Band (can be configured for either S/M or M/L length)</li>
+                        <li>1m Magnetic Charging Cable</li>
+                    </ul>
+            </div>
+
+            <div class="image1">
+                <iframe width="1200" height="676" src="https://www.youtube.com/embed/g8PVuxzuoCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+ 
+        </div>
+            <div class="image1">
+                <div>
+                    <img src="chitietsp/poster7.jpg"/>
+                </div>
+                <div>
+                    <img src="chitietsp/poster8.jpg"/>
+                </div>
+                <div>
+                    <img src="chitietsp/poster9.jpg"/>
+                </div>
+                <div>
+                    <img src="chitietsp/poster10.jpg"/>
+                </div>
+            </div>
+
+            <hr id="gachchan">
+            <div class="note" >
+                <div class="note1" >
+                    <p><b>APPLE STORE</b></p>
+                    <a href="btLon2.html"><p>MacBook Pro</p></a>
+                    <a href="btLon2.html"><p>iMac</p></a>
+                    <a href="btLon2.html"><p>iPhone</p></a>
+                    <a href="btLon2.html"><p>iPad, iPad Pro</p></a>
+                    <a href="btLon2.html"><p>Apple Watch</p></a>
+                    <a href="btLon2.html"><p>AirPods</p></a>
+                </div>
+    
+                <div class="note1">
+                    <p><b>ACCESSORIES</b></p>
+                    <a href="btLon2.html"><p>Mac Accessories</p></a>
+                    <a href="btLon2.html"><p>Mice & Keyboards</p></a>
+                    <a href="btLon2.html"><p>Mousepads</p></a>
+                    <a href="btLon2.html"><p>Health & Home Devices</p></a>
+                    <a href="btLon2.html"><p>Webcam & Headset</p></a>
+                    <a href="btLon2.html"><p>Stand for MacBook</p></a>
+                </div>
+    
+                <div class="note1">
+                    <p><b>AUDIO SYSTEM</b></p>
+                    <a href="btLon2.html"><p>JBL</p></a>
+                    <a href="btLon2.html"><p>Bose</p></a>
+                    <a href="btLon2.html"><p>Sony</p></a>
+                    <a href="btLon2.html"><p>Ultimate Ears</p></a>
+                    <a href="btLon2.html" ><p>Harman Kardon</p></a>
+                    <a href="btLon2.html"><p>Marshall</p></a>
+                </div>
+    
+                
+                <div class="note1">
+                    <p><b>HEADPHONE</b></p>
+                    <a href="btLon2.html"><p>Tai nghe JBL</p></a>
+                    <a href="btLon2.html"><p>Tai nghe Bose</p></a>
+                    <a href="btLon2.html"><p>Tai nghe Skull Candy</p></a>
+                    <a href="btLon2.html"><p>Tai nghe Audio Technica</p></a>
+                    <a href="btLon2.html" ><p>Tai nghe Sudio</p></a>
+                    <a href="btLon2.html"><p>Tai nghe Jabra</p></a>
+                </div>
+    
+    
+                <div class="note1">
+                    <p><b>THÔNG TIN MỞ RỘNG</b></p>
+                    <a href="btLon3.html"><p>Chính sách bảo hành</p></a>
+                    <a href="btLon3.html"><p>Chính sách đổi trả</p></a>
+                    <a href="btLon3.html"><p>Chính sách bảo mật thông tin</p></a>
+                    <a href="btLon3.html"><p>Dịch vụ sửa chữa</p></a>
+                    <a href="btLon3.html"><p>Vận chuyển - Thanh toán</p></a>
+                    <a href="btLon3.html"><p>Liên hệ</p></a>
+                </div>
+            </div>
+    
+    
+    
+    
+    
+    
+    
+    
+            <div class="gioithieu">
+                <div class=logogt1>
+                    <div class="logogt">
+                        <img src="logo/logo_gioithieu.png" />
+                    </div>
+                    <div class="textgt">
+                        <p>Được thiết lập từ năm 2008, Mac Center được ghi nhận là một trong những cửa hàng chuyên cung cấp các sản phẩm công nghệ cao tại Việt Nam.</p>
+                        <p>Với hơn 10 năm kinh nghiệm & đam mê trong lĩnh vực máy tính và đặc biệt là các dòng máy tính Apple, Mac Center hy vọng sẽ giúp bạn có được những sản phẩm Apple với chất lượng tốt nhất tại Việt Nam.</p>
+                    </div>
+                </div>
+                
+                   
+                <div class="hotro" >
+                    <ul class="hotro1">
+                        <li>
+                            <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hồ Chí Minh</h3>
+                            <p>Quận 10 - 561 Sư Vạn Hạnh, Phường 13<br></p>
+                            <p>Quận Gò Vấp - 371 Nguyễn Kiệm, Phường 3.<br></p>
+                            <p>Quận Tân Bình - 136 Nguyễn Hồng Đào, Phường 4.<br></p>
+                        </li>
+                        
+                        <li>
+                            <h3><i class="fas fa-map-marker-alt"></i> Chi Nhánh Hà Nội:</h3>
+                            <p>Cầu Giấy - 28 Khúc Thừa Dụ.<br></p>
+                            <p>Đống Đa - 49-51 Hồ Đắc Di, Nam Đồng.<br></p>
+                        </li>
+                        <li>
+                            <h3> Mạng xã hội</h3>
+                            <p><a href="https://www.facebook.com/apple/" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-facebook"> Facebook </i><br></a></p>
+                            <p><a href="https://www.youtube.com/user/Apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-youtube"> Youtute </i><br></a></p>
+                            <p><a href="https://twitter.com/apple" target ="_blank" style="color:rgb(75, 75, 75);"><i class="fab fa-twitter-square"> Twitter </i><br></a></p>
+                        </li>
+                        <li>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9356596756434!2d106.67562481481599!3d10.816235861415189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e19559e523%3A0x8e4133bdb1373cc9!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1628511888924!5m2!1svi!2s" width="484" height="180" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </li>
+                    </ul>
+    
+                    <div class="icongt">
+                        <div class="i1"><img src="logo/logo_gt1.png"/></div>
+                        <div class="i1"><img src="logo/logo_gt2.png"/></div>
+                        <div class="i1"><img src="logo/logo_gt3.png"/></div>
+                        <div class="i2"><img src="logo/logo_gt4.png"/></div>
+                        <div class="i2"><img src="logo/logo_gt5.png"/></div>
+                        <div class="i2"><img src="logo/logo_gt6.png"/></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="last">
+                <p>2008 © MACCENTER VIETNAM. ALL RIGHTS RESERVED.</p>
+			</div>
+    </body>
+</html>

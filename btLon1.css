@@ -1,0 +1,480 @@
+.logo1 >a > img{
+    width: 100px;
+    padding: 13px;
+}
+nav.menuchinh{
+    background-color: rgb(0, 0, 0);
+    display:flex;
+    justify-content:center;
+}
+
+ul.menucha{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+ul.menucha > li{
+    padding: 20px;
+    max-width: 500px;
+}
+ul.menucha > li > a{
+    text-decoration: none;
+    color:rgb(170, 170, 170);
+    display: block;
+    padding: 20px;
+    transition: 0.3s;
+}
+ul.menucha > li > a:hover{
+    color: white;
+}
+
+
+ul.menu1{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    z-index: 99 ;
+}
+ul.menu1 > li > a{
+    text-decoration: none;
+    color:rgb(170, 170, 170);
+    font-size: 15px;
+    transition: 0.3s;
+}
+ul.menu1 > li{
+    padding: 20px;
+    max-width: 500px;
+    width: 120px;
+}
+ul.menu1 > li > a:hover{
+    color: white;
+}
+
+.sub1{
+    display: none;
+}
+.sub:hover .sub1{
+    display: block;
+    position: absolute;
+
+}
+.iconmenu {
+    display: flex;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.iconmenu li{
+    max-width: 30px;
+}
+.iconmenu li > a{
+    color: white;
+
+}
+.iconmenu li > a > i{
+    width: 100%;
+    padding: 20px;
+    color: rgb(170, 170, 170);
+    transition: 0.3s;
+}
+.iconmenu li > a > i:hover{
+    color: white;
+}
+.nav_bars{
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+.overley{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 99;
+    display: none;
+    animation: mobile linear 0.4s;
+}
+.nav_mobile{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    height: 575px;
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: 99;
+    transform: translateX(-100%);
+    transition: transform linear 0.4s;
+    border-radius: 10px;
+}
+.nav_logo{
+    position: absolute;
+    top:20px;
+    right: 120px;
+}
+.nav_mobile-list{
+    margin-top: 120px;
+}
+.nav_mobile-list > li > a{
+    color: rgb(187, 183, 183);
+    list-style-type: none;
+}
+.nav_mobile-list > li > a:hover{
+    color: rgb(255, 255, 255);
+}
+.nav_mobile-link{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.nav_close{
+    font-size: 35px;
+    color: rgb(187, 183, 183);
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.nav_close:hover{
+    color: rgb(255, 255, 255);
+}
+.nav_input:checked ~ .overley{
+    display: block;
+}
+.nav_input{
+    display: none;
+}
+.nav_input:checked ~ .nav_mobile{
+    transform: translateX(0%);
+}
+
+@keyframes mobile{
+     from{
+         opacity: 0;
+     }
+     to{
+         opacity: 0.5;
+     }
+}
+
+.poster_tablet{
+    display: none;
+}
+@font-face{
+    src: url(font/HelveticaNeue.ttf.otf);
+    font-family: 'fontdep1';
+}
+body{
+    margin: 0px;
+    padding-top: 0px;
+    background-color:white;
+    font-family:'fontdep1';
+}
+
+
+
+.text-center {
+    display: flex;
+    padding-bottom: 100px;
+    justify-content:space-evenly;
+}
+.text-center img{
+    width: 350px;
+    height: 350px;
+}
+
+.login_main {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+.login_main > form > p{
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+.login_main > form > p:hover{
+    color: rgb(173, 1, 1);
+}
+.one{
+    display: flex;
+    border: 1px solid rgb(187, 186, 186);
+    width: 600px;
+    padding: 8px;
+}
+.one1{
+    padding: 5px;
+}
+.one1 > input{
+    outline: none;
+    border: none;
+    vertical-align: middle;
+    width: 550px;
+}
+.login0{
+    padding: 6px;
+    
+}
+.one2 > button{
+    width: 619px;
+    padding: 18px;
+    border: .5px solid rgb(43, 43, 43);
+    background-color: white;
+    transition: 0.4s;
+}
+.one2 > button:hover{
+    background-color:black ;
+    color: white;
+}
+.one2 > a{
+    text-align: center;
+}
+#tk1 > i{
+    color: rgb(58, 58, 58);
+}
+
+
+
+
+
+
+
+#gototop{
+    width:60px;
+    height: 60px;
+    right: 25px;
+    bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color:rgb(20, 20, 20);
+    border-radius: 50px;
+    z-index: 5;
+    transition: 0.3s;
+ }
+ #gototop:hover{
+    opacity: 0.8;
+ }
+ #gototop > a > i{
+     text-align: center;
+     color: rgb(255, 255, 255);
+     padding: 15px;
+ }
+.note{
+    display:flex;
+    justify-content:space-around;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.note1 > p{
+    font-size: 17px;
+    color: rgb(151, 0, 0);
+}
+.note1 > a {
+    text-decoration: none;
+    color: rgb(94, 94, 94);
+    font-size: 16px;
+    transition: 0.3s;
+}
+.note1 > a:hover{
+    color: rgb(0, 0, 0);
+    text-decoration:underline ;
+}
+
+.gioithieu{
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 30px;
+}
+.logogt1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.logogt > img{
+    width: 300px;
+    height: 60px;
+    padding-top: 30px;
+}
+
+.textgt >p {
+    color: rgb(155, 155, 155);
+    font-size: 16px;
+}
+
+ul.hotro1{
+    list-style-type: none;
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content:space-around;
+}
+ul.hotro1 >li{
+    max-width: 500px;
+    color: rgb(155, 155, 155);
+    
+}
+.ul.hotro1 > li > iframe{
+    margin: 0px;
+    padding-top: 50x;
+}
+.hotro1 > li > p > a > i{
+    color: rgb(155, 155, 155);
+}
+.hotro1 > li > p{
+    font-size: 17px;
+}
+.hotro1 > li > h3{
+    font-size: 19px;
+    color: rgb(194, 194, 194);
+}
+ #hotro2{
+    color: rgb(231, 231, 231);
+    font-size: 20px;
+    text-decoration: none;
+    
+ }
+ #gachchan{
+     border: 0. solid rgb(88, 88, 88);
+     opacity: 0.5;
+ }
+ .icongt{
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
+ .icongt > div > img {
+    vertical-align:middle;
+ }
+ .i2 > img{
+    width: 130px;
+    height: 45px;    
+ }
+ .last{
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    color: rgb(138, 138, 138);
+}
+.last > p {
+    font-size: 14px;
+    margin: 0px;
+    padding: 15px;
+}
+/*Mobile*/
+@media screen and (max-width: 500px){
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+    nav.menuchinh{
+        display: none;
+     }
+    .nav_mobile{
+        width: 265px;
+        height: 480px;
+    }
+    .nav_bars {
+         display: block;
+         display: flex;
+         justify-content: left;
+         background-color: black;
+         padding: 10px;
+     }
+    .login_main{
+        flex-direction: column;
+        padding: 70px 0px 70px 0px;
+    }
+    form.form_login{
+        padding-bottom: 70px;
+    }
+    form.form_login >p{
+        font-size: 15px;
+    }
+    form.form_sign >p{
+        font-size: 15px;
+    }
+    div.one{
+        width: 70%;
+        margin: auto;
+    }
+    .one1 > input{
+        width: 100%;
+        font-size: 10px;
+    }
+    .one2{
+        width: 76%;
+        margin: auto;
+    }
+    .one2 > button{
+        width: 100%;
+        margin: auto;
+        height: 48px;
+        font-size: 12px;
+    }
+    div.one2 > a > p{
+        font-size: 12px;
+    }
+    #gototop{
+        height:40px;
+        width: 40px;
+        right: 10px;
+        bottom: 10px;
+        position: fixed;
+        font-size: 15px;
+    }
+    .text-center{
+        display: none;
+    }
+    .logogt > img{
+        width: 230px;
+        height: 50px;
+    }
+    .textgt >p{
+        font-size: 11px;
+    }
+    div.note{
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+    }
+    div.note1{
+        padding: 7px;
+    }
+    div.note1 > p{
+        font-size: 6px;
+    }
+    div.note1 > a{
+        font-size: 6px;
+    }
+    div.gioithieu{
+        padding: 0px 10px 1px 10px;
+    }
+    ul.hotro1{
+        flex-direction: column;
+    }
+    ul.hotro1 > li > iframe{
+        display: none;
+    }
+    ul.hotro1 > li > h3{
+        font-size: 13px;
+    }
+    ul.hotro1 > li > p{
+        font-size: 10px;
+    }
+    div.logogt1{
+        padding: 0px 0px 0px 0px;
+    }
+    div.icongt{
+        display: none;
+    }
+    .last > p{
+        padding: 7px;
+        font-size: 7px;
+    }
+}
